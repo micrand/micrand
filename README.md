@@ -220,11 +220,11 @@ https://github.com/micrand
 
 LinkedIn
 
-*(Add your LinkedIn URL here)*
+https://www.linkedin.com/in/hmickael/
 
 Portfolio
 
-*(Coming Soon)*
+https://www.micrandria.com
 
 ---
 
