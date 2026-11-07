@@ -37,11 +37,6 @@ class CmsCommentPolicy
         return $authUser->can('Delete:CmsComment');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:CmsComment');
-    }
-
     public function restore(AuthUser $authUser, CmsComment $cmsComment): bool
     {
         return $authUser->can('Restore:CmsComment');
@@ -70,6 +65,21 @@ class CmsCommentPolicy
     public function reorder(AuthUser $authUser): bool
     {
         return $authUser->can('Reorder:CmsComment');
+    }
+
+    public function approve(AuthUser $authUser, CmsComment $cmsComment): bool
+    {
+        return $authUser->can('Approve:CmsComment');
+    }
+
+    public function reject(AuthUser $authUser, CmsComment $cmsComment): bool
+    {
+        return $authUser->can('Reject:CmsComment');
+    }
+
+    public function markAsSpam(AuthUser $authUser, CmsComment $cmsComment): bool
+    {
+        return $authUser->can('MarkAsSpam:CmsComment');
     }
 
 }

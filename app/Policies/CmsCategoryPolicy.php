@@ -37,11 +37,6 @@ class CmsCategoryPolicy
         return $authUser->can('Delete:CmsCategory');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:CmsCategory');
-    }
-
     public function restore(AuthUser $authUser, CmsCategory $cmsCategory): bool
     {
         return $authUser->can('Restore:CmsCategory');

@@ -37,11 +37,6 @@ class TallcmsContactSubmissionPolicy
         return $authUser->can('Delete:TallcmsContactSubmission');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:TallcmsContactSubmission');
-    }
-
     public function restore(AuthUser $authUser, TallcmsContactSubmission $tallcmsContactSubmission): bool
     {
         return $authUser->can('Restore:TallcmsContactSubmission');

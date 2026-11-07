@@ -37,11 +37,6 @@ class CmsPagePolicy
         return $authUser->can('Delete:CmsPage');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:CmsPage');
-    }
-
     public function restore(AuthUser $authUser, CmsPage $cmsPage): bool
     {
         return $authUser->can('Restore:CmsPage');

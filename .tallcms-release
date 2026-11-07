@@ -1,0 +1,10 @@
+{
+    "product": "tallcms",
+    "version": "v3.11.0",
+    "type": "full",
+    "min_php": "8.2",
+    "required_extensions": ["pdo", "mbstring", "openssl", "fileinfo"],
+    "build_platform": "Linux",
+    "build_php": "8.4",
+    "built_at": "2026-04-16T11:32:57Z"
+}

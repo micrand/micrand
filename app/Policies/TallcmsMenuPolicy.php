@@ -37,11 +37,6 @@ class TallcmsMenuPolicy
         return $authUser->can('Delete:TallcmsMenu');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:TallcmsMenu');
-    }
-
     public function restore(AuthUser $authUser, TallcmsMenu $tallcmsMenu): bool
     {
         return $authUser->can('Restore:TallcmsMenu');

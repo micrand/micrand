@@ -37,11 +37,6 @@ class TallcmsMediaPolicy
         return $authUser->can('Delete:TallcmsMedia');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:TallcmsMedia');
-    }
-
     public function restore(AuthUser $authUser, TallcmsMedia $tallcmsMedia): bool
     {
         return $authUser->can('Restore:TallcmsMedia');

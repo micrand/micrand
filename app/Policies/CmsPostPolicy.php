@@ -37,11 +37,6 @@ class CmsPostPolicy
         return $authUser->can('Delete:CmsPost');
     }
 
-    public function deleteAny(AuthUser $authUser): bool
-    {
-        return $authUser->can('DeleteAny:CmsPost');
-    }
-
     public function restore(AuthUser $authUser, CmsPost $cmsPost): bool
     {
         return $authUser->can('Restore:CmsPost');

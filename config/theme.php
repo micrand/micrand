@@ -2,7 +2,9 @@
 
 return array (
   'active' => 'talldaisy',
-  'themes_path' => 'D:\\WSERV\\micrandria\\themes',
-  'cache_themes' => true,
-  'auto_discover' => true,
+  'cache_enabled' => false,
+  'cache_ttl' => 3600,
+  'preview_duration' => 30,
+  'rollback_duration' => 24,
+  'allow_uploads' => true,
 );
